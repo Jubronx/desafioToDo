@@ -1,0 +1,75 @@
+.taskForm{
+    display: grid;
+    grid-template-columns: 1fr  90px;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-top: -55px;
+}
+
+
+.taskForm input{
+    height: 3.375rem;
+    width: 100%;
+    background-color: var(--gray-500);
+    color: var(--gray-100);
+    border: 2px solid var(--gray-700);
+    border-radius: 8px;
+    padding: 1.0rem;
+}
+
+.taskForm button{
+    height: 100%;
+    background-color: var(--blue-700);
+    color: var(--gray-100);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    line-height: 0;
+    font-weight: bold;
+    transition: color 0.2s, background 0.2s;
+}
+.taskForm button:hover{
+    background-color: var(--blue-500);
+}
+.contentTasks{
+    margin-top: 4rem;
+}
+
+.contentTasks header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentTasks header strong:nth-child(1){
+    color: var(--blue-500);
+}
+
+.contentTasks header strong:nth-child(2){
+    color: var(--purple-500);
+}
+
+.contentTasks header strong span{
+    background-color: var(--gray-400);
+    color: var(--gray-100);
+    padding: 0.0125rem 0.5425rem;
+    border-radius: 66%;
+}
+.content{
+    margin-top: 1.5rem;
+}
+.content .contentWithoutTasks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 20px 20px;
+}
+.contentWithoutTasks strong{
+    padding-top: 16px;
+}
